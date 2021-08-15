@@ -563,13 +563,12 @@
 
 
 @media (min-width:500px) {
-    *{
+    body{
         margin: 0;
         padding: 0;
-        scrollbar-width: 0;
-        /* height: 100%;
-        width: 100%; */
-        /* overflow-y: scroll; */
+        scrollbar-width: none;
+        height: 100%;
+        width: 100%;
     }
     
     header{
@@ -589,6 +588,7 @@
         
 
         z-index: 10;
+        overflow: hidden;
         /* background:linear-gradient(to right,#141e30,#243b55); */
     
     }
@@ -621,16 +621,14 @@
         display: none;
         transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
-    
-    .q{
-        position: relative;
-    }
+
     
     .q{
         font-weight: 900;
         font-size: 1em;
     
-        position: absolute;
+        position: fixed;
+        z-index: 5;
         bottom:6em;
         left: 7rem;
     
@@ -644,7 +642,7 @@
 
         background-color: transparent;
         border:1.7px solid black;
-        transition: all 2s cubic-bezier(0.645, 0.045, 0.355, 1),transform .3s cubic-bezier(0.455, 0.03, 0.515, 0.955),box-shadow .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: all .6s cubic-bezier(0.645, 0.045, 0.355, 1),transform .3s cubic-bezier(0.455, 0.03, 0.515, 0.955),box-shadow .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
     
     .q:hover{
@@ -701,8 +699,8 @@
         height: 100%;
     
         /* background-image: url("media/pexels-eberhard-grossgasteiger-16244.jpg"); */
-        background-image: url("media/pexels-kaique-rocha-775199.jpg");
-        background-size: 100vh;
+        background-image: url("media/desk-wall.jpeg");
+        background-size: 100%;
         /* background:linear-gradient(to top, #09203f 0%, #537895 100%); */
         transition:all .8s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
@@ -774,7 +772,7 @@
         justify-content:center;
         align-items:center;
         display:none;
-        /* z-index: 5; */
+        z-index: 5;
     
         background-color: #09203f;
     
@@ -846,40 +844,30 @@
     .content{
         height: 100%;   
     }
-    .content div{
-        width: 100%;
-        height:100vh;
-        display:flex;
-        /* justify-content:center;
-        align-items:center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight:700;
-        text-transform:uppercase;
-        font-size:1em;
-        letter-spacing:2pt;
-        color:black; */
 
-        justify-content: center;
-    }
 
     .about{
+        width: 100%;
+        height:100vh;
+
+
         background-image: url("media/image4.png");
         background-attachment: fixed;
         /* position:relative; */
         /* z-index: 0; */
         display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
+        flex-direction: row-reverse;
+        justify-content: space-around;
         align-items: center;
 
     }
 
     .about img{
-        width: 13rem;
+        width: 19rem;
         border-radius: 50%;
         border: 10px solid palevioletred;
 
-        margin-top: 5em;
+        margin-top: 3em;
         /* margin-bottom: 1em; */
     }
 
@@ -913,10 +901,6 @@
         margin-top: 3em;
     }
 
-    .about p:hover{
-        font-size: 2em;
-        border: 2px solid yellow;
-    }
 
     #p{
         height: 5em;
@@ -942,16 +926,6 @@
 
     }
 
-    /* .project-1{
-        position: relative;
-        z-index: -1;
-        
-    } */
-
-    .q{
-        position: fixed;
-    }
-
     .p1,.p2,.p3{
         width: 14em;
         border: 2px solid black;
@@ -969,19 +943,28 @@
     
     .Project {
         max-width: 100vw;
-        display: grid;
+        max-height: 130vh;
+        display: flex;
         margin: 0 auto;
-        padding: 40px 0;
+        /* padding: 12px 0; */
         z-index: -1;
+        background-image: url("media/pro-desk.jpg");
+        background-size: 99%;
+        background-attachment: fixed;
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .Project .card {
         position: relative;
-        width: 300px;
-        height: 400px;
+        width: 17em;
+        height: 20em;
         margin: 0 auto;
         background: #000;
         border-radius: 15px;
-        box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 1em 5em rgba(0, 0, 0, 0.5);
+        margin: 3em;
+        z-index: 0;
     }
     .Project .card .face {
         position: absolute;
@@ -1001,17 +984,17 @@
         margin: 0;
         padding: 0;
     }
-    .Project .card .face.face1 .java {
+    .Project .card .face.face1 .pro-1 {
         background-color: #fffc00;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .Project .card .face.face1 .python {
+    .Project .card .face.face1 .pro-2 {
         background-color: #00fffc;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .Project .card .face.face1 .cSharp {
+    .Project .card .face.face1 .pro-3 {
         background-color: #fc00ff;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1034,19 +1017,45 @@
     .Project .card:hover .face.face2 h2 {
         font-size: 2em;
     }
-    .Project .card:nth-child(1) .face.face2 {
+    .first{
         background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
         border-radius: 15px;
     }
-    .Project .card:nth-child(2) .face.face2 {
+    .second{
         background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
         border-radius: 15px;
     }
-    .Project .card:nth-child(3) .face.face2 {
+    .third{
         background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
         border-radius: 15px;
     }
-    
+    .fourth{
+        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+        border-radius: 15px;
+    }
+    .fifth{
+        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+        border-radius: 15px;
+    }
+    .sixth{
+        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+        border-radius: 15px;
+    }
+ 
+
+
+    .Project button{
+        color: #a3a273;
+        background-color: #000;
+        height: 2rem;
+        width: 10rem;
+        border-radius: 20%;
+
+        margin-top: 2em;
+    }
+    .Project button a{
+        text-decoration: none;
+    }   
 
     
 }
