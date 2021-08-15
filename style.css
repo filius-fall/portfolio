@@ -481,31 +481,57 @@
     .Project .card:hover .face.face2 h2 {
         font-size: 2em;
     }
-    .Project .card:nth-child(1) .face.face2 {
-        background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+    .first{
+        /* background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%); */
+        background-image: url("media/card-back.jpg");
+        background-size: 100vh;
         border-radius: 15px;
     }
-    .Project .card:nth-child(2) .face.face2 {
-        background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+    .second{
+        /* background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%); */
+        background-image: url("media/im-2.png");
+        /* background-size: 100vw; */
+        /* background-repeat: no-repeat; */
         border-radius: 15px;
     }
-    .Project .card:nth-child(3) .face.face2 {
+    .Project .card .face.face2.second h2{
+        color: black;
+    }
+    .third{
+        /* background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%); */
+        background-image: url("media/im-3.png");
+        background-size: 100vh;
+        background-position: -6em;
+        border-radius: 15px;
+    }
+    .Project .card .face.face2.third h2{
+        color: black;
+    }
+
+    .fourth{
+        background-image: url("media/im-3.jpg");
+        background-size: 100vh;
+        background-position: -5em;
+        border-radius: 15px;
+        background-attachment:local;
+    }
+    .fifth{
+        /* background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%); */
+        background-image: url("media/im-5.jpg");
+        background-size: 100vh;
+        background-position: -6em;
+        border-radius: 15px;
+        border-radius: 15px;
+    }
+    .Project .card .face.face2.fifth h2{
+        color: #000;
+    }
+
+    .sixth{
         background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
         border-radius: 15px;
     }
-    .Project .card:nth-child(4) .face.face2 {
-        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-        border-radius: 15px;
-    }
-    .Project .card:nth-child(5) .face.face2 {
-        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-        border-radius: 15px;
-    }
-    .Project .card:nth-child(6) .face.face2 {
-        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-        border-radius: 15px;
-    }
- 
+
 
 
     .Project button{
@@ -522,7 +548,24 @@
     }
     
         
-    /* CARDD */
+     /* skills */
+
+
+     .skills{
+         display: flex;
+         height: 110vh;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+         background-color: #09203f;
+         text-align: center;
+     }
+
+     ul li{
+         list-style: none;
+         padding-bottom: .7em;
+     }
 
 
     
@@ -563,13 +606,23 @@
 
 
 @media (min-width:500px) {
+    *{
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+        scrollbar-color: yellow;
+        /* border: 5px solid black; */
+    }
+    
     body{
         margin: 0;
         padding: 0;
-        scrollbar-width: none;
+        scrollbar-width: thin;
+        scrollbar-color: yellow;
         height: 100%;
         width: 100%;
     }
+
+
     
     header{
         position: fixed;
@@ -641,7 +694,7 @@
         cursor:pointer;
 
         background-color: transparent;
-        border:1.7px solid black;
+        border:1.7px solid wheat;
         transition: all .6s cubic-bezier(0.645, 0.045, 0.355, 1),transform .3s cubic-bezier(0.455, 0.03, 0.515, 0.955),box-shadow .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
     
@@ -699,8 +752,8 @@
         height: 100%;
     
         /* background-image: url("media/pexels-eberhard-grossgasteiger-16244.jpg"); */
-        background-image: url("media/desk-wall.jpeg");
-        background-size: 100%;
+        background-image: url("media/im-1.jpg");
+        background-size: 100vw;
         /* background:linear-gradient(to top, #09203f 0%, #537895 100%); */
         transition:all .8s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
@@ -741,9 +794,10 @@
     .q.open::after{
         content: "Menu";
         opacity: 1;
-        left: 1.2em;
+        left: 1em;
         top: 2em;
         width: 3em;
+        color: aqua;
         /* position: fixed; */
     }
     .q.open.menu{
@@ -851,7 +905,7 @@
         height:100vh;
 
 
-        background-image: url("media/image4.png");
+        background-image: url("media/back-2.jpg");
         background-attachment: fixed;
         /* position:relative; */
         /* z-index: 0; */
@@ -1082,6 +1136,36 @@
     .Project button a{
         text-decoration: none;
     }   
+
+    .skills{
+        display: flex;
+        height: 110vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        /* background-color: #09203f; */
+        background-image: url("media/b-2.png");
+        background-size: 99%;
+        background-attachment: fixed;
+        text-align: center;
+    }
+
+    ul li{
+        list-style: none;
+        padding-bottom: .7em;
+    }
+
+    #skill{
+        position: absolute;
+        background-color: transparent;
+        top:35em
+    }
+
+    #skill h1{
+        font-size: 9em;
+        color: azure;
+    }
 
     
 }

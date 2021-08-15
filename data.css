@@ -1,7 +1,7 @@
 ﻿@media (max-width:480px){
 	.flip-card {
 		background-color: transparent;
-		width: 20em;
+		width: 17em;
 		height: 17em;
 		margin-top: 2em;
 		/* position: relative;
@@ -58,6 +58,10 @@
 	  .flip-card-back {
 		color: white;
 		transform: rotateY(180deg);
+
+
+		display: flex;
+		flex-direction: row;
 	
 	
 	
@@ -147,7 +151,10 @@
 		color: white;
 		transform: rotateY(180deg);
 	
-	
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
 	
 		background: rgba( 255, 255, 255, 0 );
 		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -164,11 +171,22 @@
 		  margin-top: 1.5em;
 	  }
 	
+	  .flip-card-back li{
+		  font-size: 1.5em;
+	  }
 
 	  .q{
         position: fixed;
         z-index: 15;
 		left:37em;
     }
-	  
+	.skills .flip-card-front p{
+		padding-top: 2em;
+		color: aqua;
+		letter-spacing: 0.1em;
+	}
+
+	.skills .flip-card-front span{
+		color: yellowgreen
+	}
 }
