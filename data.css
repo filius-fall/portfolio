@@ -139,8 +139,10 @@
 	  }
 	
 	  .flip-card-front p{
-		  font-weight: 1000;
+		  font-weight: 800;
 		  font-size: 2em;
+		  margin: 0 auto;
+		  padding-top:2em ;
 	  }
 	
 	  .flip-card-front span{
@@ -175,6 +177,23 @@
 		  font-size: 1.5em;
 	  }
 
+
+	  .flip-card-front.main p{
+		font-size: 2em;
+		font-weight: 900;
+		color: brown;
+	  }
+
+	  .flip-card-front.main span{
+		  font-size: 2em;
+		  font-weight: 1000;
+		  color: gray;
+		  letter-spacing: .1em;
+		  text-shadow: 3px 3px 20px #ff99cc,
+		  -2px 1px 30px #ff99cc;
+	  
+	  }
+
 	  .q{
         position: fixed;
         z-index: 15;
@@ -184,6 +203,9 @@
 		padding-top: 2em;
 		color: aqua;
 		letter-spacing: 0.1em;
+		text-shadow: 3px 3px 20px #ff99cc,
+		-2px 1px 30px #ff99cc;
+	
 	}
 
 	.skills .flip-card-front span{

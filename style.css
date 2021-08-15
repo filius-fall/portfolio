@@ -51,7 +51,6 @@
         color:black;
     }
 
-
     header div span:nth-child(2){
         color: yellow;
         /* padding-left: 1.5em; */
@@ -654,16 +653,36 @@
 
 
         font-family: 'Montserrat', sans-serif;
-        font-weight:300;
+        font-weight:900;
         text-transform:capitalize;
         font-size:.8em;
         letter-spacing:0.3rem;
         color:black;
     }
 
+    header div span:nth-child(1) h1{
+        color: #888888;
+        font-weight: 1000;
+        font-size: 3em;
+        color: #fff;
 
-    header div span:nth-child(2){
-        color: yellow;
+        text-shadow: 3px 3px 20px #ff99cc,
+            -2px 1px 30px #ff99cc;    }
+
+    header div span:nth-child(3) h1{
+        color: #ffbb33 ;
+        font-weight: 1200;
+        font-size: 4em;
+        /* text-shadow: 5px 5px black; */
+        color: #fff;
+
+        text-shadow: 3px 3px 20px #ff99cc,
+    -2px 1px 30px #ff99cc;
+    }
+
+    header div span:nth-child(2) h1{
+        color: black;
+        font-size: 3em;
         /* padding-left: 1.5em; */
     }
     header div span:nth-child(3){
@@ -922,6 +941,8 @@
         border: 10px solid palevioletred;
 
         margin-top: 3em;
+        box-shadow: 3px 3px 20px #ff99cc,
+        -2px 1px 30px #ff99cc;
         /* margin-bottom: 1em; */
     }
 
@@ -1165,6 +1186,7 @@
     #skill h1{
         font-size: 9em;
         color: azure;
+        letter-spacing: .1em;
     }
 
     
