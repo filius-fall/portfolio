@@ -958,7 +958,7 @@
     .Project .card {
         position: relative;
         width: 17em;
-        height: 20em;
+        height: 18em;
         margin: 0 auto;
         background: #000;
         border-radius: 15px;
@@ -1005,8 +1005,8 @@
     .Project .card .face.face2 h2 {
         margin: 0;
         padding: 0;
-        font-size: 10em;
-        color: #fff;
+        font-size: 6em;
+        color: wheat;
         transition: 0.5s;
         text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         z-index: 10;
@@ -1018,25 +1018,51 @@
         font-size: 2em;
     }
     .first{
-        background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+        /* background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%); */
+        background-image: url("media/card-back.jpg");
+        background-size: 100vh;
         border-radius: 15px;
     }
     .second{
-        background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
+        /* background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%); */
+        background-image: url("media/im-2.png");
+        /* background-size: 100vw; */
+        /* background-repeat: no-repeat; */
         border-radius: 15px;
+    }
+    .Project .card .face.face2.second h2{
+        color: black;
     }
     .third{
-        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+        /* background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%); */
+        background-image: url("media/im-3.png");
+        background-size: 100vh;
+        background-position: -6em;
         border-radius: 15px;
     }
+    .Project .card .face.face2.third h2{
+        color: black;
+    }
+
     .fourth{
-        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+        background-image: url("media/im-3.jpg");
+        background-size: 100vh;
+        background-position: -5em;
         border-radius: 15px;
+        background-attachment:local;
     }
     .fifth{
-        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
+        /* background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%); */
+        background-image: url("media/im-5.jpg");
+        background-size: 100vh;
+        background-position: -6em;
+        border-radius: 15px;
         border-radius: 15px;
     }
+    .Project .card .face.face2.fifth h2{
+        color: #000;
+    }
+
     .sixth{
         background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
         border-radius: 15px;
