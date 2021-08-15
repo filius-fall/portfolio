@@ -1,8 +1,4 @@
 @import url('https://css.gg/menu-grid-r.css');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-
-
 
 
 
@@ -11,8 +7,6 @@
         margin: 0;
         padding: 0;
         scrollbar-width: 0;
-        /* height: 100%;
-        width: 100%; */
         /* overflow-y: scroll; */
     }
     
@@ -30,8 +24,7 @@
     
         top: 0;
         left:0;
-        
-        /* z-index: 10; */
+    
         /* background:linear-gradient(to right,#141e30,#243b55); */
     
     }
@@ -59,23 +52,32 @@
     header div span:nth-child(3){
         text-align: center;
     }
+    
+    header button{
+        position: relative;
+        z-index: 10;
+    }
 
-    header.c{
-        display: none;
-        transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
+
     
-    .q{
-        /* position: fixed; */
-    }
+    /* header h1{
+        text-transform: capitalize;
+        letter-spacing : 1pt;
     
-    .q{
+        top: 40vh;
+        left: 15vh;
+
+    
+    
+
+    } */
+    
+    header button{
         font-weight: 900;
         font-size: 1em;
     
         position: absolute;
         bottom:6em;
-        left: 7rem;
     
         width: 11em;
         height: 3em;
@@ -90,15 +92,15 @@
         transition: all 2s cubic-bezier(0.645, 0.045, 0.355, 1),transform .3s cubic-bezier(0.455, 0.03, 0.515, 0.955),box-shadow .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
     
-    .q:hover{
+    header button:hover{
         box-shadow: 10px rgba(#000, 0.5);
     }
     
-    .q:focus{
+    header button:focus{
         outline: 0;
     }
     
-    .q::before, .q::after{
+    header button::before, header button::after{
 
         position: absolute;
         top:1em;
@@ -109,7 +111,7 @@
     
     }
     
-    .q::before{
+    header button::before{
         content: "Know more about me";
         opacity: 1;
         left:0.7em;
@@ -118,9 +120,8 @@
         font-size: .9rem;
         letter-spacing: .04rem;
         color: white;
-        
     }
-    .q::after{
+    header button::after{
         font-weight: 700;
         
 
@@ -129,15 +130,11 @@
 
     }
     
-    .q{
-        position: fixed;
-    }
     .triangle{
         position: absolute;
         top:0;
         left: 0;
-        /* z-index: 10; */
-
+        z-index: 1;
     
         display: flex;
         justify-content: center;
@@ -173,7 +170,7 @@
     
     }
     
-    .q.open{
+    header.open button{
         left:1em;
         bottom: 2em;
     
@@ -182,20 +179,19 @@
         border-radius: 50%;
     }
     
-    .q.open::before{
+    header.open button::before{
         opacity: 0;
         /* left: 100%; */
     }
     
-    .q.open::after{
+    header.open button::after{
         content: "Menu";
         opacity: 1;
         left: 1.2em;
         top: 2em;
         width: 3em;
-        /* position: fixed; */
     }
-    .q.open.menu{
+    header.open button.menu{
         /* width: 100%;
         height: 100%; */
         left: 0;
@@ -204,7 +200,7 @@
         left: -100%;
     
     }
-    .q.open.menu::after{
+    header.open button.menu::after{
         left: -200%;
         bottom: -100%;
     }
@@ -221,9 +217,8 @@
         justify-content:center;
         align-items:center;
         display:none;
-        /* z-index: 5; */
     
-        background-color: #09203f;
+        /* background-color: #09203f; */
     
     }
     
@@ -272,7 +267,6 @@
         top:2em;
         left: 1em;
         transition: 1s;
-        /* z-index: 6; */
     }
     
     #nav-close span:nth-child(1){
@@ -291,205 +285,21 @@
     /* Content */
 
     .content{
-        height: 100%;   
+        background-color: red;
     }
     .content div{
-        width: 100%;
         height:100vh;
         display:flex;
-        /* justify-content:center;
+        justify-content:center;
         align-items:center;
         font-family: 'Montserrat', sans-serif;
         font-weight:700;
         text-transform:uppercase;
         font-size:1em;
         letter-spacing:2pt;
-        color:black; */
-
-        justify-content: center;
+        color:black;
     }
-
-    .about{
-        background-image: url("media/image4.png");
-        background-attachment: fixed;
-        /* position:relative; */
-        /* z-index: 0; */
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-
-    }
-
-    .about img{
-        width: 13rem;
-        border-radius: 50%;
-        border: 10px solid palevioletred;
-
-        margin-top: 5em;
-        /* margin-bottom: 1em; */
-    }
-
-    .about p{
-        font-family: 'Acme', sans-serif;
-        /* font-family: 'Indie Flower', cursive; */
-        /* font-family: 'Montserrat', sans-serif; */
-        font-size: 1.2em;
-
-        text-justify: distribute;
-        justify-content: center;
-        color: antiquewhite;
-        letter-spacing: .12em;
-        /* padding: .5em; */
-        height: 30%;
-
-        /* border: 2px solid yellow; */
-
-        
-    }
-
-    
-
-    .about p{
-        /* position: absolute; */
-        left: 0;
-        top:18em;
-        /* z-index: 2; */
-
-        padding-left: 1em;
-        margin-top: 3em;
-    }
-
-    .about p:hover{
-        font-size: 2em;
-        border: 2px solid yellow;
-    }
-
-    #p{
-        height: 5em;
-        width: 5em;
-
-    }
-
-
-
-
-
-
-
-
-
-
-    /* Projects */
-
-    .projects{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    /* .project-1{
-        position: relative;
-        z-index: -1;
-        
-    } */
-
-    .p1,.p2,.p3{
-        width: 14em;
-        border: 2px solid black;
-        margin-bottom: 2em;
-    }
-
-    .p1{
-        text-align: center;
-    }
-
-        @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-    
-    /* CARDS */
-    body .container .card {
-        position: relative;
-        width: 300px;
-        height: 400px;
-        margin: 0 auto;
-        background: #000;
-        border-radius: 15px;
-        box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
-        z-index: -1;
-    }
-    body .container .card .face {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    body .container .card .face.face1 {
-        box-sizing: border-box;
-        padding: 20px;
-    }
-    body .container .card .face.face1 h2 {
-        margin: 0;
-        padding: 0;
-    }
-    body .container .card .face.face1 .java {
-        background-color: #fffc00;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    body .container .card .face.face1 .python {
-        background-color: #00fffc;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    body .container .card .face.face1 .cSharp {
-        background-color: #fc00ff;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    body .container .card .face.face2 {
-        transition: 0.5s;
-    }
-    body .container .card .face.face2 h2 {
-        margin: 0;
-        padding: 0;
-        font-size: 10em;
-        color: #fff;
-        transition: 0.5s;
-        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 10;
-    }
-    body .container .card:hover .face.face2 {
-        height: 60px;
-    }
-    body .container .card:hover .face.face2 h2 {
-        font-size: 2em;
-    }
-    body .container .card:nth-child(1) .face.face2 {
-        background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
-        border-radius: 15px;
-    }
-    body .container .card:nth-child(2) .face.face2 {
-        background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
-        border-radius: 15px;
-    }
-    body .container .card:nth-child(3) .face.face2 {
-        background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-        border-radius: 15px;
-    }
-    
-    
-
-    
-
 }
-
-
-
 
 
 
