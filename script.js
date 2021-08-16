@@ -65,3 +65,9 @@ $( "*", document.body ).click(function( event ) {
 });
 
 
+
+$("nav ul li a").click(function(event){
+  toggleNav()
+  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+})
+

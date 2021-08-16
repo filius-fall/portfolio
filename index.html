@@ -7,6 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="data.css">
+    <link rel="stylesheet" href="contact.css">
+
+
+
+    <link href='https://css.gg/smartphone.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -34,10 +39,10 @@
       
       <nav>
         <ul>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Blog</li>
-          <li>Contact Me</li>
+          <li id="about"><a href="#content">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
         </ul>
         <div id="nav-close">
           <span></span>
@@ -47,7 +52,7 @@
       </nav>
       
 
-      <div class="content">
+      <div class="content" id="content">
            
         <div id="About" class="about">
             <img src="media/test1.jpg">
@@ -55,8 +60,10 @@
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front main">
-                    <p>HELLO</p>
+                    
                     <span>My name is Sreeram Ambalam</span>
+
+                    <p>Web developer </p>
                 </div>
                 <div class="flip-card-back">
                   <p>I'm a self-taught, self-starting developer seeking to launch a career building web applications and services.Familiar with development and deployment process for many web-based technologies</p>          
@@ -74,7 +81,7 @@
         </h1>
       </div>
 
-      <div class="skills">
+      <div class="skills" id="skills">
 
         <div class="flip-card">
           <div class="flip-card-inner">
@@ -124,16 +131,6 @@
 
                 </ul>
               </div>
-<!-- 
-              <div>
-                <ul>
-                  <li></li>
-                  <li>Git</li>
-                  <li>Linux</li>
-                  <li>CherryPy</li>
-                  <li>Open Source</li>
-                </ul>
-              </div> -->
             </div>
           </div>
         </div>
@@ -141,7 +138,7 @@
 
 
 
-      <div class="Project">
+      <div class="Project" id="projects">
 
         <div class="card">
           <div class="face face1">
@@ -236,14 +233,84 @@
       </div>
 
 
+    <div class="contact" id="contact-me">
+      <div class="s">
+        *
+        
+
+      </div>
+
       
 
 
-     <!-- <content>
-      <section>Section 1</section>
-      <section>Section 2</section>
-      <section>Section 3</section>
-    </content> -->
+      <div class="sidebar">
+        <aside>
+          This is aside
+        </aside>
+
+        <!-- <i class="gg-smartphone">ca</i>
+        <p>Call me</p> -->
+
+        <div class="blur">
+          <h1>Contact Me</h1>
+        </div>
+
+        <div class="blur icons">
+          <div>
+            <img src="media/icons8-android-48.png"/>
+            <p>+91 9493013594</p>
+          </div>
+
+          <div>
+            <img src="media/icons8-linkedin-48.png">
+            <p><a href="https://www.linkedin.com/in/sreeram-ambalam-331606178/">Sreeram Ambalam</a></p>
+          </div>
+
+          <div>
+            <img src="media/icons8-github-30.png">
+            <p><a href="https://github.com/filius-fall">Filius-fall</a></p>
+          </div>
+
+          <div>
+            <img src="media/icons8-gmail-48.png">
+            <p><a href="mailto:asreeram1729@gmail.com">asreeram1729@gmail.com</a></p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <main>
+        <div class="forms">
+
+          <form action="https://formspree.io/f/mbjqpoja"method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Your name here">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Your Email here">
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phone" placeholder="Your Phone number here">
+
+            <label for="text">Message</label>
+            <textarea name="text" placeholder="Your message here"></textarea>
+
+            <button type="submit">Send</button>
+            
+          </form>
+        </div>
+      </main>
+
+      <a href="https://icons8.com/icon/9qJE8HBWstFb/android" class="nnn">Android icon by Icons8</a>
+
+      
+    </div>
+
+
+  
 
 
 

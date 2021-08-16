@@ -1,0 +1,164 @@
+@media (min-width:490px){
+    .contact{
+        height: 105vh;
+        background-image: url("media/im-4.jpeg");
+        background-repeat: no-repeat;
+        background-size:100vh;
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+
+    .s{
+        color: aliceblue;
+    }
+
+    .forms{
+        /* padding-top: 3em; */
+    }
+
+    main{
+        margin-top: 10em;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    input[type=text]{
+        width: 45%;
+        padding: 10px 17px;
+        /* margin: 8px 0; */
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+
+        margin-left: 2em;
+        background: transparent;
+        color: wheat;
+
+    
+        
+      }
+      textarea{
+        width: 45%;
+        height: 7em;
+        padding: 12px 20px;
+        /* margin: 8px 0; */
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        box-sizing: border-box;
+
+        margin-left: 2em;
+
+        background: transparent;
+        color: wheat;
+      }
+      
+      button[type=submit]{
+          width: 10%;
+          height: 3em;
+          margin-left: 8em;
+          margin-top: 2em;
+
+          border-radius: 10%;
+      }
+      
+      button[type=submit]:hover {
+        background-color: #45a049;
+        font-size: 1em;
+        
+
+      }
+
+
+      label{
+          margin-left: 1em;
+
+          padding: .6em;
+          color: wheat;
+      }
+
+
+      .sidebar{
+          width: 44%;
+          float: right;
+          height: 90vh;
+
+          /* opacity: .5; */
+
+          margin-right: 2em;
+          margin-top: 3.5em;
+
+      }
+      
+      .blur{
+          background-color: transparent;
+          position: relative;
+          bottom: 32em;
+          right: -9em;
+          width: 13em;
+          height: 3em;
+          text-align: center;
+
+
+      }
+
+      .blur h1{
+          font-size: 2em;
+          padding-top: 0em;
+          color: orangered;
+          font-weight: 1100;
+
+          box-shadow: 3px 3px 20px #ff99cc,
+        -2px 1px 30px #ff99cc;
+        border-radius: 10%;
+      }
+
+
+
+      aside{
+        filter: blur(.9em);
+        opacity: .9;
+        background-color: black;
+        width: 90%;
+        height: 90vh;
+      }
+
+      .blur.icons{
+          background-color: transparent;
+          margin-top: 4em;
+          height: 50vh;
+
+      }
+
+      .nnn{
+          display: none;
+      }
+
+      .blur.icons img{
+          float: left;
+      }
+
+      .blur.icons div{
+          display: flex ;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 2em;
+      }
+      .blur.icons div p{
+          color: wheat;
+      }
+
+      .blur.icons div p a{
+          text-decoration: none;
+          color: antiquewhite;
+      }
+
+
+}
+
+
